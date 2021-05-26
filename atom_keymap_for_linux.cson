@@ -1,0 +1,33 @@
+'atom-workspace atom-text-editor':
+    'ctrl-h':'core:backspace',
+    'ctrl-b':'core:move-left',
+    'ctrl-f':'core:move-right',
+    'ctrl-p':'core:move-up',
+    'ctrl-n':'core:move-down',
+    'ctrl-a':'editor:move-to-first-character-of-line',
+    'cmd-k':'editor:cut-to-end-of-line',
+    'ctrl-e':'editor:move-to-end-of-screen-line',
+    'cmd-f': 'find-and-replace:show',
+    'cmd-a': 'core:select-all',
+    'cmd-w': 'editor:select-to-end-of-word',
+    'shift-cmd-p': 'core:select-to-top',
+    'shift-cmd-n': 'core:select-to-bottom'
+
+'platform-win32 .markdown-preview, .platform-linux .markdown-preview':
+    'ctrl-alt-a': 'markdown-preview:select-all'
+
+'body':
+    'cmd-s': 'core:save',
+    'cmd-c': 'core:copy',
+    'cmd-v': 'core:paste',
+    'cmd-z': 'core:undo',
+    'cmd-y': 'core:redo'
+
+'atom-text-editor':
+    'cmd-i': 'editor:auto-indent',
+    'cmd-e': 'editor:select-to-end-of-line',
+    'alt-b': 'editor:move-to-end-of-word',
+    'alt-f': 'editor:move-to-beginning-of-word'
+
+'atom-workspace atom-text-editor:not([mini])':
+    'cmd-/': 'editor:toggle-line-comments'
