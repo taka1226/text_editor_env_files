@@ -9,9 +9,18 @@
     'ctrl-e':'editor:move-to-end-of-screen-line',
     'cmd-f': 'find-and-replace:show',
     'cmd-a': 'core:select-all',
-    'cmd-w': 'editor:select-to-end-of-word',
+    'ctrl-shift-l': 'editor:select-to-end-of-word',
+    'ctrl-shift-h': 'editor:select-to-beginning-of-word',
     'shift-cmd-p': 'core:select-to-top',
-    'shift-cmd-n': 'core:select-to-bottom'
+    'shift-cmd-n': 'core:select-to-bottom',
+    'alt-j':  'multi-cursor:move-last-cursor-down',
+    'alt-l': 'multi-cursor:move-last-cursor-right',
+    'alt-h':  'multi-cursor:move-last-cursor-left',
+    'alt-k':    'multi-cursor:move-last-cursor-up',
+    'alt-shift-j': 'multi-cursor:expand-down',
+    'alt-shift-k':   'multi-cursor:expand-up',
+
+
 
 'platform-win32 .markdown-preview, .platform-linux .markdown-preview':
     'ctrl-alt-a': 'markdown-preview:select-all'
@@ -21,13 +30,19 @@
     'cmd-c': 'core:copy',
     'cmd-v': 'core:paste',
     'cmd-z': 'core:undo',
-    'cmd-y': 'core:redo'
+    'cmd-y': 'core:redo',
+    'cmd-n': 'application:new-file',
+    'alt-p': 'pane:show-previous-item',
+    'alt-n': 'pane:show-next-item',
+    'ctrl-,': 'pane:move-item-left',
+    'ctrl-.': 'pane:move-item-right'
 
 'atom-text-editor':
     'cmd-i': 'editor:auto-indent',
-    'cmd-e': 'editor:select-to-end-of-line',
-    'alt-b': 'editor:move-to-end-of-word',
-    'alt-f': 'editor:move-to-beginning-of-word'
+    'shift-cmd-a': 'editor:select-to-first-character-of-line',
+    'shift-cmd-e': 'editor:select-to-end-of-line',
+    'cmd-l': 'editor:move-to-end-of-word',
+    'cmd-h': 'editor:move-to-beginning-of-word'
 
 'atom-workspace atom-text-editor:not([mini])':
     'cmd-/': 'editor:toggle-line-comments'
